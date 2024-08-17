@@ -1,0 +1,52 @@
+.sidebar {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar span {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar span:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 16px;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    div.content {
+      margin-left: 0;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar span {
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  
